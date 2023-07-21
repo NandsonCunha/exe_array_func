@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <script>
+        const dias = 7
+        const semana = []
+        const semana2 = []
+
+        for (i = 0; i < 6; i++){
+            const temp = prompt(`Digite a temperatura:`);
+            semana.push(temp)
+            semana2.push(temp)
+        }
+
+        const menorTemperatura = semana.reduce((min, temperatura) => (temperatura < min ? temperatura : min));
+
+
+        const maiorTemperatura = semana.reduce((max, temperatura) => (temperatura > max ? temperatura : max));
+
+        alert(`Temperaturas da semana: ${semana}, Menor:${menorTemperatura}, Maior:${maiorTemperatura}`);
+    </script>
+</body>
+</html>

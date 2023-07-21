@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+<body>
+    <script>
+        const tipo = (prompt('Tipo:'))
+        const real = parseFloat(prompt('Valor:'))
+
+        function converterMoeda(real, tipo){
+        if(tipo == 'd'){
+            alert(`real: ${(real/5.50).toFixed(2)}U$`)
+        }else if(tipo == 'e'){
+            alert(`euro: ${(real/7.00).toFixed(2)}euro`)
+        }else{
+            alert('Erro contate o administrador')
+        }
+        }
+
+        converterMoeda(real, tipo)
+
+    </script>
+</body>
+</html>

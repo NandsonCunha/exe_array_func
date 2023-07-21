@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <script>
+        const tamanhoArrayA = 10
+        const arrayA = []
+
+
+        for (let i = 0; i < tamanhoArrayA; i++) {
+        const numero = parseFloat(prompt(`Digite o ${i + 1}º número:`))
+        arrayA.push(numero)
+        }
+
+        const valorX = parseFloat(prompt("Digite o valor de X:"))
+
+        const arrayM = arrayA.map((elemento) => elemento * valorX)
+
+        alert(`Resultado do Array M: ${arrayM}`)
+
+    </script>
+</body>
+</html>
